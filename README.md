@@ -9,7 +9,7 @@ The script is based on the Ubuntu ARM install of ROS Kinetic: http://wiki.ros.or
 
 Maintainer of ARM builds for ROS is http://answers.ros.org/users/1034/ahendrix/
 
-<strong>updateReepositories.sh</strong>
+<strong>updateRepositories.sh</strong>
 This is an optional step. Adds the repositories universe, multiverse, and restricted and then apt-get update. These repositories are in the standard 27.1 install, so probably not needed.
 
 <strong>installROS.sh</strong>
