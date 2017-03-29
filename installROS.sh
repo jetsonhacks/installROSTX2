@@ -22,6 +22,8 @@ sudo apt-get install ros-kinetic-ros-base -y
 # 
 # Initialize rosdep
 sudo apt-get install python-rosdep -y
+# Certificates are messed up
+sudo c_rehash /etc/ssl/certs
 # Initialize rosdep
 sudo rosdep init
 # To find available packages, use:
