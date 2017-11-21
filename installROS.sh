@@ -22,14 +22,13 @@ sudo apt-get install ros-kinetic-ros-base -y
 # 
 # Initialize rosdep
 sudo apt-get install python-rosdep -y
-# Certificates are messed up
+# Certificates are messed up on the Jetson for some reason
 sudo c_rehash /etc/ssl/certs
 # Initialize rosdep
 sudo rosdep init
 # To find available packages, use:
 rosdep update
-# Environment Setup
-echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
-source ~/.bashrc
+# Environment Setup - Don't add /opt/ros/kinetic/setup.bash if it's already in bashrc
+grep -q -F 'source /opt/ros/kinetic/setup.bash' ~/.bashrc || echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrcsource ~/.bashrc
 # Install rosinstall
 sudo apt-get install python-rosinstall -y
