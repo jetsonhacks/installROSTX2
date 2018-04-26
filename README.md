@@ -5,6 +5,8 @@ These scripts will install Robot Operating System (ROS) on the NVIDIA Jetson TX2
 
 For L4T 28.2 (JetPack 3.2)
 
+See releases or tags for earlier versions.
+
 The script is based on the Ubuntu ARM install of ROS Kinetic: http://wiki.ros.org/kinetic/Installation/Ubuntu
 
 Maintainer of ARM builds for ROS is http://answers.ros.org/users/1034/ahendrix/
@@ -21,6 +23,13 @@ Usage: ./installROS.sh  [[-p package] | [-h]]
                                  ros-kinetic-desktop
                                  ros-kinetic-desktop-full
  </pre>
+ 
+Default is ros-kinetic-ros-base.
+
+Example Usage:
+
+$ ./installROS.sh -p ros-kinetic-desktop -p ros-kinetic-rgbd-launch
+
 This script installs a baseline ROS environment. There are several tasks:
 
 <ul>
