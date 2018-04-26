@@ -12,7 +12,7 @@ Maintainer of ARM builds for ROS is http://answers.ros.org/users/1034/ahendrix/
 There are two scripts:
 
 <strong>installROS.sh</strong>
-<code>
+<pre>
 Usage: ./installROS.sh  [[-p package] | [-h]]
  -p | --package \<packagename\>  ROS package to install
                                Multiple Usage allowed
@@ -20,7 +20,7 @@ Usage: ./installROS.sh  [[-p package] | [-h]]
                                  ros-kinetic-ros-base
                                  ros-kinetic-desktop
                                  ros-kinetic-desktop-full
- </code>
+ </pre>
 This script installs a baseline ROS environment. There are several tasks:
 
 <ul>
