@@ -14,7 +14,7 @@ There are two scripts:
 <strong>installROS.sh</strong>
 <pre>
 Usage: ./installROS.sh  [[-p package] | [-h]]
- -p | --package \<packagename\>  ROS package to install
+ -p | --package <packagename>  ROS package to install
                                Multiple Usage allowed
                                The first package should be a base package. One of the following:
                                  ros-kinetic-ros-base
