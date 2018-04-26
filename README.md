@@ -24,7 +24,7 @@ Usage: ./installROS.sh  [[-p package] | [-h]]
                                  ros-kinetic-desktop-full
  </pre>
  
-Default is ros-kinetic-ros-base.
+Default is ros-kinetic-ros-base if no packages are specified.
 
 Example Usage:
 
@@ -36,7 +36,7 @@ This script installs a baseline ROS environment. There are several tasks:
 <li>Enable repositories universe, multiverse, and restricted</li>
 <li>Adds the ROS sources list</li>
 <li>Sets the needed keys</li>
-<li>Loads ros-kinetic-ros-base</li>
+<li>Loads specified ROS packages, defaults to ros-kinetic-base-ros if none specified</li>
 <li>Initializes rosdep</li>
 </ul>
 
