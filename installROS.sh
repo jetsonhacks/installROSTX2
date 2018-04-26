@@ -102,7 +102,7 @@ tput sgr0
 # Here we loop through any packages passed on the command line
 # Install packages ...
 for package in "${packages[@]}"; do
-  sudo apt-get install $package
+  sudo apt-get install $package -y
 done
 
 # Add Individual Packages here
@@ -137,6 +137,6 @@ echo "Installing rosinstall tools"
 tput sgr0
 sudo apt-get install python-rosinstall python-rosinstall-generator python-wstool build-essential -y
 tput setaf 2
-echo "Install finished"
+echo "Installation complete!"
 tput sgr0
 
